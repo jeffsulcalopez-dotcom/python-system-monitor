@@ -10,7 +10,7 @@ def get_uptime():
     return f"{uptime_hours}h {uptime_minutes}m"
 
 def monitor():
-    print("=== Linux / System Server Monitor ===")
+    print("=== System Resource Monitor ===")
     print(f"System: {platform.system()} {platform.release()}")
     print(f"CPU Usage: {psutil.cpu_percent(interval=1)}%")
     print(f"Memory Usage: {psutil.virtual_memory().percent}%")
